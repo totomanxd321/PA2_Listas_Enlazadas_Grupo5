@@ -1,0 +1,3 @@
+digraph G { graph [bgcolor="white", rankdir=LR, ranksep="0.58", nodesep="0.36", pad="0.18", fontname="DejaVu Sans", fontsize=12]; node [shape=box, style="rounded,filled", color="#CBD5E1", fillcolor="#F1F5F9", fontname="DejaVu Sans", fontsize=12, fontcolor="#1E293B", penwidth=1.5, margin="0.16,0.10"]; edge [color="#2563EB", arrowsize=0.68, penwidth=2.0, fontname="DejaVu Sans", fontsize=10];
+a[label="S100"]; b[label="S101"]; c[label="S105\nREUBICADO",fillcolor="#DCFCE7",color="#16A34A"]; d[label="S102"];e[label="S102A"];f[label="S103"];g[label="S106"]; a->b->c->d->e->f->g;
+}

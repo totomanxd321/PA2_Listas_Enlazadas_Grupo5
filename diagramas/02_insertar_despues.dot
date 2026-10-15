@@ -1,0 +1,4 @@
+digraph G { graph [bgcolor="white", rankdir=LR, ranksep="0.58", nodesep="0.36", pad="0.18", fontname="DejaVu Sans", fontsize=12]; node [shape=box, style="rounded,filled", color="#CBD5E1", fillcolor="#F1F5F9", fontname="DejaVu Sans", fontsize=12, fontcolor="#1E293B", penwidth=1.5, margin="0.16,0.10"]; edge [color="#2563EB", arrowsize=0.68, penwidth=2.0, fontname="DejaVu Sans", fontsize=10];
+a[label="S101"]; b[label="S102"]; c[label="S102A\nNUEVO",fillcolor="#DCFCE7",color="#16A34A",penwidth=2]; d[label="S103"];e[label="S104"];
+a->b->c->d->e; 
+}

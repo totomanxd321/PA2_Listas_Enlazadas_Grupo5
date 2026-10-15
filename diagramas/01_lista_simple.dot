@@ -1,0 +1,5 @@
+digraph G { graph [bgcolor="white", rankdir=LR, ranksep="0.58", nodesep="0.36", pad="0.18", fontname="DejaVu Sans", fontsize=12]; node [shape=box, style="rounded,filled", color="#CBD5E1", fillcolor="#F1F5F9", fontname="DejaVu Sans", fontsize=12, fontcolor="#1E293B", penwidth=1.5, margin="0.16,0.10"]; edge [color="#2563EB", arrowsize=0.68, penwidth=2.0, fontname="DejaVu Sans", fontsize=10];
+head[label="CABEZA",shape=plaintext,fontcolor="#2563EB"];
+n1[label="S101\nConstancia"]; n2[label="S102\nOrientación"]; n3[label="S103\nReclamo"]; n4[label="S104\nActualización"]; n5[label="S105\nConsulta"]; null[label="NULO",shape=plaintext,fontcolor="#64748B"];
+head->n1->n2->n3->n4->n5->null;
+}
