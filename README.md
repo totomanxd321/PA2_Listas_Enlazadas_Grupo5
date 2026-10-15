@@ -10,7 +10,7 @@ Modelar el registro cambiante de solicitudes de atención usando listas enlazada
 ## Integrantes
 
 1. [Nombre y apellido del integrante 1]
-2. [Nombre y apellido del integrante 2]
+2. Leonardo Cuadros 
 3. [Nombre y apellido del integrante 3]
 4. [Nombre y apellido del integrante 4]
 5. [Nombre y apellido del integrante 5]
@@ -101,12 +101,5 @@ Eliminar S104:    S100 → S101 → S102 → S102A → S103 → S105 → S106 �
 - Informe final: [`entrega/Informe_PA2_Listas_Enlazadas.pdf`](entrega/Informe_PA2_Listas_Enlazadas.pdf)
 - Archivo editable: [`entrega/Informe_PA2_Listas_Enlazadas.docx`](entrega/Informe_PA2_Listas_Enlazadas.docx)
 - Guion de exposición: [`docs/GUIA_EXPOSICION_5.md`](docs/GUIA_EXPOSICION_5.md) y [`entrega/Guion_PA2_5_Integrantes.pdf`](entrega/Guion_PA2_5_Integrantes.pdf)
-- Láminas para mostrar en la grabación: [`entrega/Laminas_PA2_Para_Exposicion.pdf`](entrega/Laminas_PA2_Para_Exposicion.pdf)
-- **Video de YouTube (no listado):** `[PEGAR AQUÍ EL ENLACE REAL DEL VIDEO]`
-- **Repositorio de GitHub:** `[PEGAR AQUÍ EL ENLACE REAL DEL REPOSITORIO]`
 
-> **Antes de entregar:** reemplazar los cinco nombres y enlaces. Publicar el video con cámaras encendidas y participación de los cinco miembros, confirmar que el enlace funciona sin iniciar sesión y dejar evidencia verídica de asistencia y avances en clases. No se incluye evidencia inventada.
 
-## Material de apoyo
-
-Los documentos `docs/PSEUDOCODIGO.md` y `docs/DIAGRAMAS.md` amplían el procedimiento. `docs/PROMPT_CODEX.md` está listo para llevar esta versión al repositorio con Codex sin cambiar el comportamiento ni las respuestas del informe.
