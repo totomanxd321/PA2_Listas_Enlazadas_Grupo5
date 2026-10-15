@@ -1,18 +1,18 @@
-# Guion listo para grabar — PA2, cinco integrantes
+# Guion de exposición PA2 para cuatro integrantes
 
 **Duración estimada:** 11 a 13 minutos (incluye ejecución del programa).  
-**Modalidad:** reunión virtual/grabación de pantalla con **las cinco cámaras encendidas durante toda la exposición**.  
-**Material de pantalla:** informe PDF, archivos en GitHub (cuando se publique), diagramas y terminal.
+**Modalidad:** reunión virtual y grabación de pantalla con **las cuatro cámaras encendidas durante toda la exposición**.<br>
+**Material de pantalla:** informe PDF, repositorio de GitHub, diagramas y terminal.
 
-> **Antes de grabar:** sustituir «Integrante 1» a «Integrante 5» por nombres reales y practicar la secuencia. Los tiempos son orientativos, no un límite indicado por la rúbrica. No afirmar que se subió el repositorio o video hasta que sea cierto.
+> **Antes de grabar:** practicar la secuencia completa y comprobar que el repositorio, la terminal y los diagramas se vean con claridad. Los tiempos son orientativos.
 
-## Integrante 1 — Introducción, caso y actividad 1 (2:00–2:20)
+## Leonardo Cuadros — Introducción, caso y actividad 1 (2:00–2:20)
 
 **En pantalla:** portada del informe y diagrama `01_lista_simple.png`.
 
 **Diálogo:**
 
-“Buenos días, profesor. Somos el equipo de cinco integrantes y vamos a sustentar nuestra PA2 del curso de Algoritmo y Estructura de Datos Basados en Inteligencia Artificial. El tema es el uso de listas enlazadas para organizar solicitudes de atención.
+“Buenos días, profesor. Somos un equipo de cuatro integrantes y vamos a sustentar nuestra PA2 del curso de Algoritmo y Estructura de Datos Basados en Inteligencia Artificial. El tema es el uso de listas enlazadas para organizar solicitudes de atención.
 
 El caso nos plantea una organización donde las solicitudes cambian constantemente: llegan nuevas, algunas se eliminan, otras necesitan cambiar de posición, y en ciertos momentos hay que regresar a un caso anterior o revisar todos los casos de manera continua.
 
@@ -26,7 +26,7 @@ Ahora mi compañero explicará las operaciones que realizamos sobre la lista sim
 
 **Acción:** señalar cabeza, cinco nodos y enlace final a `NULO`.
 
-## Integrante 2 — Actividad 2: recorrido e inserciones (2:10–2:30)
+## Jhonatan Lino — Actividad 2: recorrido e inserciones (2:10–2:30)
 
 **En pantalla:** informe sección “Actividad 2”, imágenes `01_lista_simple.png` y `02_insertar_despues.png`, y salida de la demostración.
 
@@ -44,11 +44,11 @@ La tercera operación es insertar después de un nodo dado. Por ejemplo, queremo
 
 Estas operaciones nos permiten registrar solicitudes en lugares distintos. Algo importante es que buscar el código S102 puede tardar más que conectar los nodos, por eso distinguimos el costo de búsqueda del costo de los enlaces.
 
-Con esto queda explicado el recorrido y las inserciones. Le doy pase al tercer integrante.”
+Con esto queda explicado el recorrido y las inserciones. Le doy pase a Anthony Fernando.”
 
 **Acción:** mostrar las tres líneas correspondientes en la terminal y comparar antes/después.
 
-## Integrante 3 — Actividad 3: búsqueda, modificación y eliminación (2:10–2:30)
+## Anthony Fernando — Actividad 3: búsqueda, modificación y eliminación (2:10–2:30)
 
 **En pantalla:** `03_eliminar_nodo.png`, sección de pseudocódigo, salida `Buscar S103` y `Eliminar S104`.
 
@@ -66,11 +66,11 @@ También consideramos los casos especiales. Si se elimina la primera solicitud, 
 
 En cuanto a eficiencia, buscar por código es O(n), porque en el peor caso revisamos todos los nodos. Eliminar un nodo después de encontrar a su anterior solo requiere ajustar enlaces, pero la búsqueda previa hace que la eliminación por código pueda ser O(n). Además, para responder al caso, agregamos la reubicación: S105 se mueve después de S101 sin crear una segunda solicitud.
 
-Estas decisiones hacen que el sistema mantenga el orden correcto. Ahora veremos por qué otras estructuras son útiles en el mismo problema.”
+Estas decisiones hacen que el sistema mantenga el orden correcto. Ahora Victor Sinche explicará por qué otras estructuras son útiles en el mismo problema.”
 
 **Acción:** resaltar la flecha S103 → S105 y ejecutar el ejemplo de modificación.
 
-## Integrante 4 — Actividad 4: lista doble y circular (2:10–2:30)
+## Victor Sinche — Actividad 4: lista doble y circular (2:10–2:30)
 
 **En pantalla:** `04_lista_doble.png` y `05_lista_circular.png`.
 
@@ -86,11 +86,11 @@ Nuestra segunda situación es una ronda de revisión periódica. Una vez que se 
 
 Esto evita reiniciar manualmente el recorrido en cada ronda. Sin embargo, hay que tener cuidado: como no existe un enlace nulo al final, un ciclo sin condición de salida podría continuar indefinidamente. Por eso la demostración usa un contador de nodos para una vuelta y un cursor que avanza en cada turno.
 
-No elegimos una sola estructura para todo porque cada una responde a una necesidad distinta: organización básica, navegación hacia atrás o revisión continua. Mi último compañero presentará la comprobación de la solución.”
+No elegimos una sola estructura para todo porque cada una responde a una necesidad distinta: organización básica, navegación hacia atrás o revisión continua. A continuación presentaré la comprobación de la solución.”
 
 **Acción:** recorrer los tres nodos hacia ambos lados y luego simular cinco turnos circulares.
 
-## Integrante 5 — Implementación, pruebas, decisiones y cierre (2:20–3:00)
+## Victor Sinche — Implementación, pruebas y cierre (2:20–3:00)
 
 **En pantalla:** árbol del repositorio, `app/estructuras.py`, terminal y README.
 
@@ -102,7 +102,7 @@ En la carpeta `app` está la implementación de la lista simple, doble y circula
 
 Además, agregamos pruebas automáticas. Ahora ejecutamos `python -m unittest discover -s tests -v`. Las trece pruebas sirven para verificar, entre otras cosas, que al borrar la cabeza o la cola no se pierdan referencias, que no se permitan códigos repetidos en la lista simple y que la lista circular conserve su ciclo.
 
-En el README explicamos qué problema resuelve el proyecto, quiénes participaron, cómo están distribuidos los archivos, cómo ejecutar el ejemplo y dónde encontrar el informe. Al publicar el video, se colocará también su enlace para que el profesor pueda acceder directamente.
+En el README explicamos qué problema resuelve el proyecto, quiénes participaron, cómo están distribuidos los archivos, cómo ejecutar el ejemplo y dónde encontrar el informe. El repositorio está publicado en https://github.com/totomanxd321/PA2_Listas_Enlazadas_Grupo5. Después de publicar el video, añadiremos también su enlace.
 
 En conclusión, la lista simple es suficiente para administrar solicitudes en una secuencia, la doble mejora la navegación en ambos sentidos y la circular permite repetir la revisión por turnos. Aprendimos que elegir una estructura no depende solo de que funcione, sino también de las operaciones que requiere el problema y del costo de mantener sus enlaces.
 

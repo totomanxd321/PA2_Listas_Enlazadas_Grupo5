@@ -1,7 +1,7 @@
 # PA2 | Gestión dinámica de solicitudes con listas enlazadas
 
-**Curso:** Algoritmo y Estructura de Datos Basados en Inteligencia Artificial · **Código:** 30710  
-**Evaluación:** PA2, sesiones 5 a 7 · **Modalidad:** grupal (hasta 5 estudiantes)
+**Curso:** Algoritmo y Estructura de Datos Basados en Inteligencia Artificial · **Código:** 30710 · **NRC:** 4134<br>
+**Docente:** Wildr Julio Espinoza Bravo · **Evaluación:** PA2, sesiones 5 a 7
 
 ## Objetivo
 
@@ -9,11 +9,10 @@ Modelar el registro cambiante de solicitudes de atención usando listas enlazada
 
 ## Integrantes
 
-1. [Nombre y apellido del integrante 1]
-2. Leonardo Cuadros 
-3. [Nombre y apellido del integrante 3]
-4. [Nombre y apellido del integrante 4]
-5. [Nombre y apellido del integrante 5]
+1. Leonardo Cuadros
+2. Jhonatan Lino
+3. Anthony Fernando
+4. Victor Sinche
 
 ## Caso y decisiones de diseño
 
@@ -36,15 +35,13 @@ PA2_Listas_Enlazadas_Grupo5/
 ├── docs/
 │   ├── PSEUDOCODIGO.md
 │   ├── DIAGRAMAS.md
-│   ├── GUIA_EXPOSICION_5.md
-│   ├── CHECKLIST_ENTREGA.md
-│   └── PROMPT_CODEX.md
+│   └── GUIA_EXPOSICION_4.md
 ├── diagramas/                  # Diagramas PNG y SVG
 └── entrega/
     ├── Informe_PA2_Listas_Enlazadas.pdf
     ├── Informe_PA2_Listas_Enlazadas.docx
-    ├── Guion_PA2_5_Integrantes.pdf
-    ├── Guion_PA2_5_Integrantes.docx
+    ├── Guion_PA2_4_Integrantes.pdf
+    ├── Guion_PA2_4_Integrantes.docx
     └── Laminas_PA2_Para_Exposicion.pdf
 ```
 
@@ -100,6 +97,13 @@ Eliminar S104:    S100 → S101 → S102 → S102A → S103 → S105 → S106 �
 
 - Informe final: [`entrega/Informe_PA2_Listas_Enlazadas.pdf`](entrega/Informe_PA2_Listas_Enlazadas.pdf)
 - Archivo editable: [`entrega/Informe_PA2_Listas_Enlazadas.docx`](entrega/Informe_PA2_Listas_Enlazadas.docx)
-- Guion de exposición: [`docs/GUIA_EXPOSICION_5.md`](docs/GUIA_EXPOSICION_5.md) y [`entrega/Guion_PA2_5_Integrantes.pdf`](entrega/Guion_PA2_5_Integrantes.pdf)
+- Guion de exposición: [`docs/GUIA_EXPOSICION_4.md`](docs/GUIA_EXPOSICION_4.md) y [`entrega/Guion_PA2_4_Integrantes.pdf`](entrega/Guion_PA2_4_Integrantes.pdf)
+- Láminas para mostrar en la grabación: [`entrega/Laminas_PA2_Para_Exposicion.pdf`](entrega/Laminas_PA2_Para_Exposicion.pdf)
+- **Video de YouTube (no listado):** pendiente de grabación y publicación.
+- **Repositorio de GitHub:** https://github.com/totomanxd321/PA2_Listas_Enlazadas_Grupo5
 
+> **Antes de entregar:** publicar el video con las cuatro cámaras encendidas, añadir su enlace y comprobar que se reproduce sin iniciar sesión.
 
+## Material de apoyo
+
+Los documentos `docs/PSEUDOCODIGO.md` y `docs/DIAGRAMAS.md` amplían el procedimiento.
