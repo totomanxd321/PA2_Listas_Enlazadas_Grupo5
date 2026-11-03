@@ -1,116 +1,80 @@
 import unittest
-from app.estructuras import ListaSimple, ListaDoble, ListaCircular, Solicitud
+
+from app.estructuras import (Cola, ColaLlenaError, ColaVaciaError, Pila,
+                             PilaLlenaError, PilaVaciaError)
 
 
-def s(c):
-    return Solicitud(c, "Asunto " + c)
+class TestPila(unittest.TestCase):
+    def test_vacia_al_inicio(self):
+        self.assertTrue(Pila().esta_vacia())
+
+    def test_lifo(self):
+        p = Pila()
+        for x in (1, 2, 3):
+            p.apilar(x)
+        self.assertEqual([p.desapilar() for _ in range(3)], [3, 2, 1])
+
+    def test_ver_tope_no_elimina(self):
+        p = Pila()
+        p.apilar("a")
+        self.assertEqual(p.ver_tope(), "a")
+        self.assertEqual(p.tamano(), 1)
+
+    def test_desapilar_vacia(self):
+        with self.assertRaises(PilaVaciaError):
+            Pila().desapilar()
+
+    def test_tope_vacia(self):
+        with self.assertRaises(PilaVaciaError):
+            Pila().ver_tope()
+
+    def test_desbordamiento(self):
+        p = Pila(2)
+        p.apilar(1)
+        p.apilar(2)
+        with self.assertRaises(PilaLlenaError):
+            p.apilar(3)
 
 
-class TestListaSimple(unittest.TestCase):
-    def setUp(self):
-        self.lista = ListaSimple()
-        for codigo in ("A", "B", "C"):
-            self.lista.insertar_final(s(codigo))
+class TestCola(unittest.TestCase):
+    def test_vacia_al_inicio(self):
+        self.assertTrue(Cola().esta_vacia())
 
-    def test_recorrido_y_tamano(self):
-        self.assertEqual(self.lista.codigos(), ["A", "B", "C"])
-        self.assertEqual(self.lista.tamano, 3)
+    def test_fifo(self):
+        c = Cola()
+        for x in (1, 2, 3):
+            c.encolar(x)
+        self.assertEqual([c.desencolar() for _ in range(3)], [1, 2, 3])
 
-    def test_insertar_inicio_final_y_despues(self):
-        self.lista.insertar_inicio(s("X"))
-        self.lista.insertar_final(s("Z"))
-        self.assertTrue(self.lista.insertar_despues("B", s("Y")))
-        self.assertEqual(self.lista.codigos(), ["X", "A", "B", "Y", "C", "Z"])
-        self.assertEqual(self.lista.cola.dato.codigo, "Z")
+    def test_ver_frente_no_elimina(self):
+        c = Cola()
+        c.encolar("a")
+        c.encolar("b")
+        self.assertEqual(c.ver_frente(), "a")
+        self.assertEqual(c.tamano(), 2)
 
-    def test_insertar_despues_de_la_cola(self):
-        self.assertTrue(self.lista.insertar_despues("C", s("D")))
-        self.assertEqual(self.lista.cola.dato.codigo, "D")
-        self.assertIsNone(self.lista.cola.siguiente)
+    def test_desencolar_vacia(self):
+        with self.assertRaises(ColaVaciaError):
+            Cola().desencolar()
 
-    def test_insertar_despues_de_inexistente(self):
-        self.assertFalse(self.lista.insertar_despues("NO", s("D")))
-        self.assertEqual(self.lista.tamano, 3)
+    def test_frente_vacia(self):
+        with self.assertRaises(ColaVaciaError):
+            Cola().ver_frente()
 
-    def test_buscar_y_modificar(self):
-        self.assertIsNone(self.lista.buscar("X"))
-        self.assertTrue(self.lista.modificar("B", asunto="Resuelto", estado="Cerrado"))
-        self.assertEqual(self.lista.buscar("B").dato.estado, "Cerrado")
-        self.assertFalse(self.lista.modificar("X", estado="Cerrado"))
+    def test_cola_llena(self):
+        c = Cola(2)
+        c.encolar(1)
+        c.encolar(2)
+        with self.assertRaises(ColaLlenaError):
+            c.encolar(3)
 
-    def test_eliminar_cabeza_interior_y_cola(self):
-        self.assertTrue(self.lista.eliminar("A"))
-        self.assertTrue(self.lista.eliminar("B"))
-        self.assertTrue(self.lista.eliminar("C"))
-        self.assertEqual(self.lista.codigos(), [])
-        self.assertIsNone(self.lista.cabeza)
-        self.assertIsNone(self.lista.cola)
-        self.assertEqual(self.lista.tamano, 0)
-
-    def test_eliminar_interior_y_cola(self):
-        self.assertTrue(self.lista.eliminar("B"))
-        self.assertEqual(self.lista.codigos(), ["A", "C"])
-        self.assertTrue(self.lista.eliminar("C"))
-        self.assertEqual(self.lista.cola.dato.codigo, "A")
-        self.assertIsNone(self.lista.cola.siguiente)
-        self.assertFalse(self.lista.eliminar("NO"))
-
-    def test_reubicar_cabeza_y_cola(self):
-        self.assertTrue(self.lista.reubicar_despues("A", "C"))
-        self.assertEqual(self.lista.codigos(), ["B", "C", "A"])
-        self.assertEqual(self.lista.cola.dato.codigo, "A")
-        self.assertTrue(self.lista.reubicar_despues("A", "B"))
-        self.assertEqual(self.lista.codigos(), ["B", "A", "C"])
-        self.assertEqual(self.lista.cola.dato.codigo, "C")
-
-    def test_reubicar_posicion_actual_y_ausentes(self):
-        self.assertTrue(self.lista.reubicar_despues("B", "A"))
-        self.assertFalse(self.lista.reubicar_despues("A", "A"))
-        self.assertFalse(self.lista.reubicar_despues("NO", "B"))
-        self.assertFalse(self.lista.reubicar_despues("B", "NO"))
-        self.assertEqual(self.lista.tamano, 3)
-
-    def test_codigos_duplicados(self):
-        with self.assertRaises(ValueError):
-            self.lista.insertar_final(s("A"))
-        with self.assertRaises(ValueError):
-            self.lista.insertar_despues("A", s("B"))
-
-    def test_vacia_y_un_nodo(self):
-        l = ListaSimple()
-        self.assertEqual(l.codigos(), [])
-        self.assertFalse(l.eliminar("A"))
-        l.insertar_inicio(s("A"))
-        self.assertIs(l.cabeza, l.cola)
-        self.assertTrue(l.eliminar("A"))
-        self.assertEqual(l.tamano, 0)
-
-
-class TestListaDoble(unittest.TestCase):
-    def test_recorridos_vacia_y_tres_nodos(self):
-        lista = ListaDoble()
-        self.assertEqual(lista.recorrer_adelante(), [])
-        self.assertEqual(lista.recorrer_atras(), [])
-        for codigo in ("A", "B", "C"):
-            lista.insertar_final(s(codigo))
-        self.assertEqual(lista.recorrer_adelante(), ["A", "B", "C"])
-        self.assertEqual(lista.recorrer_atras(), ["C", "B", "A"])
-        self.assertIs(lista.cola.anterior.siguiente, lista.cola)
-        self.assertIsNone(lista.cabeza.anterior)
-        self.assertIsNone(lista.cola.siguiente)
-
-
-class TestListaCircular(unittest.TestCase):
-    def test_vacia_y_ciclos(self):
-        lista = ListaCircular()
-        self.assertEqual(lista.una_vuelta(), [])
-        self.assertIsNone(lista.siguiente_revision())
-        for codigo in ("A", "B", "C"):
-            lista.insertar_final(s(codigo))
-        self.assertEqual(lista.una_vuelta(), ["A", "B", "C"])
-        self.assertIs(lista.cola.siguiente.siguiente.siguiente, lista.cola)
-        self.assertEqual([lista.siguiente_revision() for _ in range(5)],
-                         ["A", "B", "C", "A", "B"])
+    def test_circularidad(self):
+        c = Cola(3)
+        for x in (1, 2, 3):
+            c.encolar(x)
+        c.desencolar()
+        c.encolar(4)  # reutiliza la posición liberada
+        self.assertEqual([c.desencolar() for _ in range(3)], [2, 3, 4])
 
 
 if __name__ == "__main__":
