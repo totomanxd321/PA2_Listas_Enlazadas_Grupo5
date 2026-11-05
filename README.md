@@ -4,7 +4,7 @@
 
 Equipo (cuatro integrantes): **Leonardo Cuadros, Jhonatan Lino, Anthony Fernando y Victor Sinche**.
 
-## PA3 — Pilas LIFO y colas FIFO (entrega más reciente)
+## PA3 — Pilas LIFO y colas FIFO
 
 La evaluación aplicada sobre **deshacer modificaciones mediante pila** y **atender solicitudes mediante cola** está en una carpeta independiente. Los archivos anteriores del repositorio se han preservado.
 
@@ -12,10 +12,9 @@ La evaluación aplicada sobre **deshacer modificaciones mediante pila** y **aten
 - [Informe PA3 en PDF](PA3_Pilas_Colas_30710/entrega/Informe_PA3_Pilas_Colas.pdf)
 - [Desarrollo académico de las cuatro actividades](PA3_Pilas_Colas_30710/docs/informe.md)
 - [Pseudocódigo y diagramas](PA3_Pilas_Colas_30710/pseudocodigo/algoritmos.md)
-- [Guion de exposición de cuatro integrantes](PA3_Pilas_Colas_30710/docs/guion_exposicion_4.md)
 - [Pruebas automatizadas](PA3_Pilas_Colas_30710/tests/test_pilas_colas.py)
 
-Para ejecutar **desde la raíz del repositorio**:
+**Comandos utilizados para verificar la implementación:**
 
 ```bash
 cd PA3_Pilas_Colas_30710
@@ -23,9 +22,8 @@ python -m app.demo
 python -m unittest discover -s tests -v
 ```
 
-Se verificaron **22/22 pruebas locales**.
+**Resultados:** 22/22 pruebas locales correctas.
 
-**Video de YouTube:** pendiente de grabación y publicación por los cuatro integrantes, con cámaras prendidas. El enlace real deberá añadirse al README. **La asistencia** la verifica el docente.
 
 ## PA2 — Listas enlazadas
 

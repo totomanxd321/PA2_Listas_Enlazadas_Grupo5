@@ -6,12 +6,11 @@
 ## Objetivo y solución
 Modelar dos procesos de una unidad de servicios académicos: **deshacer cambios en orden inverso** (pila LIFO) y **atender solicitudes por llegada** (cola FIFO). La solución consta de conceptos, selección técnica, diagramas, pseudocódigo, código y pruebas.
 
-## Entregables y materiales
+## Materiales del proyecto
 - **[Informe completo en PDF](entrega/Informe_PA3_Pilas_Colas.pdf)** (6 páginas con desarrollo, diagramas y conclusiones).
 - [Informe completo en Markdown](docs/informe.md).
 - [Algoritmos en pseudocódigo](pseudocodigo/algoritmos.md).
 - [Diagrama de pila](diagramas/01_pila_lifo.svg), [diagrama de cola](diagramas/02_cola_fifo.svg) y [flujo integral](diagramas/03_flujo_general.svg).
-- [Guion de exposición del equipo](docs/guion_exposicion_4.md).
 - Implementación: `app/estructuras.py`, `app/servicio_academico.py`, `app/demo.py`.
 - Pruebas: `tests/test_pilas_colas.py`.
 
@@ -21,7 +20,6 @@ PA3_Pilas_Colas_30710/
 ├── README.md
 ├── entrega/Informe_PA3_Pilas_Colas.pdf
 ├── docs/informe.md
-├── docs/guion_exposicion_4.md
 ├── pseudocodigo/algoritmos.md
 ├── diagramas/01_pila_lifo.svg
 ├── diagramas/02_cola_fifo.svg
@@ -33,8 +31,8 @@ PA3_Pilas_Colas_30710/
 └── tests/test_pilas_colas.py
 ```
 
-## Requisitos y ejecución
-Python 3.10 o superior, sin dependencias externas. Desde esta carpeta:
+## Implementación y verificación
+Python 3.10 o superior, sin dependencias externas. Comandos empleados en la comprobación del programa:
 
 ```bash
 python -m app.demo
@@ -43,9 +41,5 @@ python -m unittest discover -s tests -v
 
 **Verificación local:** 22 pruebas correctas (6 de pila, 7 de cola y 9 del caso).
 
-## Video
-**Enlace de YouTube:** PENDIENTE. Grabar a los **cuatro integrantes con cámaras encendidas** y explicar por qué cada caso usa pila o cola; subirlo preferentemente como no listado, verificar acceso y sustituir esta línea con la URL real.
-
-La **asistencia** y el seguimiento en clase se acreditan únicamente según el registro del docente.
 
 **Fuente:** enunciado y rúbrica de la PA3 (sesiones 8-10, curso 30710), suministrados por el docente.

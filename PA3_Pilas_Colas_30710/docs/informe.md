@@ -2,7 +2,7 @@
 **Institución:** ISIL | **Carrera:** Desarrollo de Software | **Curso:** Algoritmo y Estructura de Datos Basados en Inteligencia Artificial | **Código:** 30710 | **NRC:** 4134  
 **Docente:** Wildr Julio Espinoza Bravo | **Fecha:** 4 de noviembre de 2026
 
-## Integrantes (mismo grupo de la PA2)
+## Integrantes
 1. Leonardo Cuadros
 2. Jhonatan Lino
 3. Anthony Fernando
@@ -53,8 +53,8 @@ El pseudocódigo incluye las ocho operaciones exigidas y el uso en el caso: [pse
 
 ![Flujo de los procesos](../diagramas/03_flujo_general.svg)
 
-## Verificación reproducible
-Ejecutar desde la carpeta `PA3_Pilas_Colas_30710`:
+## Verificación técnica
+Comandos utilizados en las pruebas desde la carpeta `PA3_Pilas_Colas_30710`:
 
 ```bash
 python -m app.demo
@@ -66,12 +66,5 @@ Se verificaron **22 pruebas locales satisfactorias** de operaciones LIFO/FIFO, o
 ## Conclusión grupal
 La estructura correcta depende de la regla de atención. La pila protege la consistencia de los datos porque restaura primero el cambio más reciente; la cola mejora el orden y la previsibilidad de los trámites, respetando su llegada. Elegir bien evita inversiones de secuencia, reduce errores funcionales y ofrece operaciones eficientes O(1) en los extremos con nodos enlazados.
 
-## Entrega y exposición
-- Informe académico legible en GitHub: [desarrollo de las cuatro actividades](informe.md).
-- Código Python: [app](../app/).
-- Pruebas: [tests](../tests/test_pilas_colas.py).
-- Guion para **cuatro** expositores: [guion](guion_exposicion_4.md).
-- **Video en YouTube (no listado): PENDIENTE DE GRABAR Y PUBLICAR**. Pegar aquí la URL verdadera.
-- **Asistencia y seguimiento**: se acreditan con el docente; no se declaran como realizados.
 
 **Fuente base:** «PA3 - Evaluación aplicada sobre pilas y colas», sesiones 8 a 10, código 30710, enunciado y rúbrica entregados por el docente.
