@@ -1,48 +1,32 @@
-# PA3 | Pilas (LIFO) y colas (FIFO) en una unidad de servicios académicos
+# Algoritmo y Estructura de Datos Basados en Inteligencia Artificial (30710)
 
-**Curso:** Algoritmo y Estructura de Datos Basados en Inteligencia Artificial · **Código:** 30710 · **NRC:** 4134
-**Docente:** Wildr Julio Espinoza Bravo · **Evaluación:** PA3, sesiones 8 a 10
+**ISIL · NRC 4134 · Docente: Wildr Julio Espinoza Bravo**
 
-## Objetivo
-Modelar con una **pila** el historial de acciones que se deshacen en orden inverso y con una **cola** la atención de solicitudes en orden de llegada, justificando la elección de cada estructura.
+Equipo (cuatro integrantes): **Leonardo Cuadros, Jhonatan Lino, Anthony Fernando y Victor Sinche**.
 
-## Integrantes
-1. Leonardo Cuadros
-2. Jhonatan Lino
-3. Anthony Fernando
-4. Victor Sinche
+## PA3 — Pilas LIFO y colas FIFO (entrega más reciente)
 
-## Estructura de archivos
-```
-PA3_Pilas_Colas_Grupo5/
-├── README.md
-├── app/
-│   ├── estructuras.py   # Pila y Cola
-│   └── demo.py          # Flujo completo del caso
-├── tests/
-│   └── test_estructuras.py
-├── docs/
-│   ├── PSEUDOCODIGO.md
-│   ├── DIAGRAMAS.md
-│   ├── SELECCION_ESTRUCTURA.md
-│   └── COMPARACION.md
-├── diagramas/
-└── entrega/             # informe PDF
-```
+La evaluación aplicada sobre **deshacer modificaciones mediante pila** y **atender solicitudes mediante cola** está en una carpeta independiente. Los archivos anteriores del repositorio se han preservado.
 
-## Instrucciones de uso
-Requiere Python 3.10 o superior, sin dependencias externas. Desde la raíz del repositorio:
+- **[Entrar al proyecto completo de PA3](PA3_Pilas_Colas_30710/README.md)**
+- [Informe PA3 en PDF](PA3_Pilas_Colas_30710/entrega/Informe_PA3_Pilas_Colas.pdf)
+- [Desarrollo académico de las cuatro actividades](PA3_Pilas_Colas_30710/docs/informe.md)
+- [Pseudocódigo y diagramas](PA3_Pilas_Colas_30710/pseudocodigo/algoritmos.md)
+- [Guion de exposición de cuatro integrantes](PA3_Pilas_Colas_30710/docs/guion_exposicion_4.md)
+- [Pruebas automatizadas](PA3_Pilas_Colas_30710/tests/test_pilas_colas.py)
 
-```
+Para ejecutar **desde la raíz del repositorio**:
+
+```bash
+cd PA3_Pilas_Colas_30710
 python -m app.demo
 python -m unittest discover -s tests -v
 ```
 
-## Decisiones de diseño
-- **Pila:** historial de acciones; el último cambio es el primero en deshacerse.
-- **Cola:** solicitudes de atención; se atiende primero a quien llegó primero.
-- Ambas son de capacidad fija, con control de desbordamiento y de estructura vacía. Todas las operaciones son O(1).
+Se verificaron **22/22 pruebas locales**.
 
-## Informe y video
-- Informe PDF: `entrega/` (pendiente de agregar)
-- **Video de YouTube (no listado):** PENDIENTE, agregar el enlace aquí
+**Video de YouTube:** pendiente de grabación y publicación por los cuatro integrantes, con cámaras prendidas. El enlace real deberá añadirse al README. **La asistencia** la verifica el docente.
+
+## PA2 — Listas enlazadas
+
+Los materiales históricos de listas enlazadas siguen disponibles en las carpetas originales `app/`, `tests/`, `docs/`, `diagramas/` y `entrega/`. El proyecto PA3 está aislado para evitar mezclar implementaciones y pruebas de evaluaciones distintas.

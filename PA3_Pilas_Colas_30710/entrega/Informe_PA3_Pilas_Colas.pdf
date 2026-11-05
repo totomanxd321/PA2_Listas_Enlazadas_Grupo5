@@ -1,0 +1,289 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R 5 0 R 7 0 R 9 0 R 11 0 R 13 0 R] /Count 6 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 15 0 R /F2 16 0 R /F3 17 0 R >> >> >>
+endobj
+4 0 obj
+<< /Length 3256 >>
+stream
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 736 Tm (Datos de la evaluaci\363n) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 713 Tm (Instituci\363n: ISIL  |  Carrera: Desarrollo de Software) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 697 Tm (Curso: Algoritmo y Estructura de Datos Basados en Inteligencia Artificial) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 681 Tm (C\363digo: 30710  |  NRC: 4134  |  Sesiones: 8 a 10) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 665 Tm (Docente: Wildr Julio Espinoza Bravo) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 634 Tm (Integrantes del mismo grupo de la PA2) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 611 Tm (1. Leonardo Cuadros     2. Jhonatan Lino) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 595 Tm (3. Anthony Fernando     4. Victor Sinche) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 564 Tm (Prop\363sito y problema) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 541 Tm (La unidad de servicios acad\351micos necesita dos mecanismos independientes: deshacer acciones) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 525 Tm (en orden inverso al registro y atender tr\341mites en el mismo orden de llegada. Se selecciona) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 509 Tm (una pila LIFO para el historial de cambios y una cola FIFO para los turnos.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 479 Tm (Objetivo general) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 456 Tm (Dise\361ar, representar, implementar y justificar pilas y colas en un caso real, incluyendo) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 440 Tm (ocho operaciones, diagramas, comparaci\363n y pruebas del sistema.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 410 Tm (Criterios de dise\361o) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 387 Tm (Una modificaci\363n almacena campo, valor anterior y valor nuevo. Solo se registra si) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 371 Tm (realmente altera la ficha. Cada solicitud tiene c\363digo \372nico y asunto. No se introduce) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 355 Tm (prioridad porque el caso exige el orden de llegada.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 326 Tm (Entregables) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 303 Tm (Informe completo, pseudoc\363digo, implementaci\363n funcional en Python, diagramas, repositorio) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 287 Tm (documentado y guion para exposici\363n grupal. El enlace de YouTube se agregar\341 cuando exista) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 271 Tm (un video real.) Tj ET
+0.08 0.30 0.49 rg 0 779 595 63 re f
+1 1 1 rg BT /F2 15 Tf 1 0 0 1 60 804 Tm (PA3  |  PILAS LIFO Y COLAS FIFO) Tj ET
+1 1 1 rg BT /F1 8.3 Tf 1 0 0 1 60 788 Tm (Algoritmos y Estructuras de Datos Basados en Inteligencia Artificial \(30710\)) Tj ET
+0.07 0.21 0.34 rg BT /F2 16 Tf 1 0 0 1 62 759 Tm (Informe de evaluaci\363n aplicada) Tj ET
+0.22 0.40 0.60 RG 1.3 w 62 750 m 533 750 l S
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 724 Tm (Gesti\363n de cambios reversibles y solicitudes en una unidad acad\351mica) Tj ET
+0.4 0.47 0.55 rg BT /F1 8 Tf 1 0 0 1 63 38 Tm (ISIL  |  NRC 4134  |  04/11/2026                                       1) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 6 0 R /Resources << /Font << /F1 15 0 R /F2 16 0 R /F3 17 0 R >> >> >>
+endobj
+6 0 obj
+<< /Length 2718 >>
+stream
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 736 Tm (Principio de funcionamiento) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 713 Tm (LIFO significa Last In, First Out: la \372ltima acci\363n registrada es la primera que se) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 697 Tm (revierte. Todo ingreso y salida ocurre por un \372nico extremo llamado tope.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 675 Tm (Representaci\363n gr\341fica) Tj ET
+0.67 0.82 0.92 rg 160 473 265 52 re f
+0.77 0.88 0.95 rg 160 416 265 52 re f
+0.87 0.93 0.97 rg 160 359 265 52 re f
+0.10 0.17 0.26 rg BT /F2 14 Tf 1 0 0 1 203 494 Tm (A3: Estado \(TOPE\)) Tj ET
+0.10 0.17 0.26 rg BT /F2 14 Tf 1 0 0 1 215 438 Tm (A2: Tel\351fono) Tj ET
+0.10 0.17 0.26 rg BT /F2 14 Tf 1 0 0 1 199 380 Tm (A1: Correo \(BASE\)) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 171 334 Tm (Se desapila A3 primero) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 294 Tm (Operaciones requeridas) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 271 Tm (Apilar: colocar el nuevo cambio sobre el tope. Desapilar: quitar y devolver el elemento del) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 255 Tm (tope. Ver tope: consultar sin retirar. Est\341 vac\355a: comprobar si no hay nodos.) Tj ET
+0.93 0.96 0.98 rg 57 161 482 85 re f
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 221 Tm (APILAR\(x\): nuevo <- Nodo\(x, tope\); tope <- nuevo) Tj ET
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 207 Tm (DESAPILAR\(\): si vac\355a ERROR; x <- tope.valor) Tj ET
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 193 Tm (             tope <- tope.siguiente; devolver x) Tj ET
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 179 Tm (VER_TOPE\(\): si vac\355a ERROR; devolver tope.valor) Tj ET
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 165 Tm (ESTA_VACIA\(\): devolver tope = NULO) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 135 Tm (Aplicaci\363n: al modificar correo \(A1\), tel\351fono \(A2\) y estado \(A3\), la pila guarda los) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 119 Tm (valores anteriores. Deshacer A3 restaura el estado previo, y A2/A1 siguen disponibles.) Tj ET
+0.08 0.30 0.49 rg 0 779 595 63 re f
+1 1 1 rg BT /F2 15 Tf 1 0 0 1 60 804 Tm (PA3  |  PILAS LIFO Y COLAS FIFO) Tj ET
+1 1 1 rg BT /F1 8.3 Tf 1 0 0 1 60 788 Tm (Algoritmos y Estructuras de Datos Basados en Inteligencia Artificial \(30710\)) Tj ET
+0.07 0.21 0.34 rg BT /F2 16 Tf 1 0 0 1 62 759 Tm (Actividad 1 - Pila LIFO) Tj ET
+0.22 0.40 0.60 RG 1.3 w 62 750 m 533 750 l S
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 724 Tm (Historial de modificaciones que pueden deshacerse) Tj ET
+0.4 0.47 0.55 rg BT /F1 8 Tf 1 0 0 1 63 38 Tm (ISIL  |  NRC 4134  |  04/11/2026                                       2) Tj ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 8 0 R /Resources << /Font << /F1 15 0 R /F2 16 0 R /F3 17 0 R >> >> >>
+endobj
+8 0 obj
+<< /Length 3041 >>
+stream
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 736 Tm (Principio de funcionamiento) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 713 Tm (FIFO significa First In, First Out: la solicitud que llega primero tambi\351n se atiende) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 697 Tm (primero. Se encola por el final y se desencola por el frente.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 675 Tm (Representaci\363n gr\341fica) Tj ET
+0.70 0.88 0.78 rg 66 488 142 77 re f
+0.79 0.92 0.84 rg 224 488 142 77 re f
+0.88 0.96 0.91 rg 382 488 142 77 re f
+0.10 0.17 0.26 rg BT /F2 18 Tf 1 0 0 1 99 528 Tm (S101) Tj ET
+0.10 0.17 0.26 rg BT /F2 18 Tf 1 0 0 1 257 528 Tm (S102) Tj ET
+0.10 0.17 0.26 rg BT /F2 18 Tf 1 0 0 1 415 528 Tm (S103) Tj ET
+0.10 0.17 0.26 rg BT /F2 10 Tf 1 0 0 1 101 463 Tm (FRENTE) Tj ET
+0.10 0.17 0.26 rg BT /F2 10 Tf 1 0 0 1 431 463 Tm (FINAL) Tj ET
+0.10 0.17 0.26 rg BT /F2 11 Tf 1 0 0 1 151 430 Tm (Atender: S101 -> S102 -> S103) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 396 Tm (Operaciones requeridas) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 373 Tm (Encolar: insertar una solicitud al final. Desencolar: extraer y atender la del frente. Ver) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 357 Tm (frente: leerla sin eliminarla. Est\341 vac\355a: identificar la ausencia de solicitudes.) Tj ET
+0.93 0.96 0.98 rg 57 221 482 127 re f
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 323 Tm (ENCOLAR\(x\): nuevo <- Nodo\(x\)) Tj ET
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 309 Tm (  si final=NULO: frente <- nuevo) Tj ET
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 295 Tm (  si no: final.siguiente <- nuevo; final <- nuevo) Tj ET
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 281 Tm (DESENCOLAR\(\): si vac\355a ERROR; x <- frente.valor) Tj ET
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 267 Tm (  frente <- frente.siguiente) Tj ET
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 253 Tm (  si frente=NULO: final <- NULO; devolver x) Tj ET
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 239 Tm (VER_FRENTE\(\): si vac\355a ERROR; devolver frente.valor) Tj ET
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 225 Tm (ESTA_VACIA\(\): devolver frente = NULO) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 195 Tm (Aplicaci\363n: llegan S101 \(constancia\), S102 \(orientaci\363n\) y S103 \(reclamo\). La atenci\363n) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 179 Tm (ocurre exactamente S101, luego S102 y despu\351s S103.) Tj ET
+0.08 0.30 0.49 rg 0 779 595 63 re f
+1 1 1 rg BT /F2 15 Tf 1 0 0 1 60 804 Tm (PA3  |  PILAS LIFO Y COLAS FIFO) Tj ET
+1 1 1 rg BT /F1 8.3 Tf 1 0 0 1 60 788 Tm (Algoritmos y Estructuras de Datos Basados en Inteligencia Artificial \(30710\)) Tj ET
+0.07 0.21 0.34 rg BT /F2 16 Tf 1 0 0 1 62 759 Tm (Actividad 2 - Cola FIFO) Tj ET
+0.22 0.40 0.60 RG 1.3 w 62 750 m 533 750 l S
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 724 Tm (Atenci\363n de solicitudes por turno de llegada) Tj ET
+0.4 0.47 0.55 rg BT /F1 8 Tf 1 0 0 1 63 38 Tm (ISIL  |  NRC 4134  |  04/11/2026                                       3) Tj ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 10 0 R /Resources << /Font << /F1 15 0 R /F2 16 0 R /F3 17 0 R >> >> >>
+endobj
+10 0 obj
+<< /Length 2609 >>
+stream
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 736 Tm (1. Acciones recientes para revertir cambios) Tj ET
+0.06 0.42 0.48 rg BT /F2 12 Tf 1 0 0 1 62 713 Tm (PILA LIFO) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 693 Tm (El \372ltimo cambio afecta el estado actual y debe revertirse primero.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 651 Tm (2. Solicitudes atendidas en orden de llegada) Tj ET
+0.06 0.42 0.48 rg BT /F2 12 Tf 1 0 0 1 62 628 Tm (COLA FIFO) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 608 Tm (El primer tr\341mite registrado debe ser el primero en salir.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 566 Tm (3. \332ltimo ingresado se procesa primero) Tj ET
+0.06 0.42 0.48 rg BT /F2 12 Tf 1 0 0 1 62 543 Tm (PILA LIFO) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 523 Tm (Acceso directo al tope: extracci\363n inversa al ingreso.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 481 Tm (4. Espera de tr\341mites pendientes) Tj ET
+0.06 0.42 0.48 rg BT /F2 12 Tf 1 0 0 1 62 458 Tm (COLA FIFO) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 438 Tm (Frente y final conservan la secuencia de llegada.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 396 Tm (Ejemplo de contraste) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 373 Tm (Entradas A1, A2 y A3 en una pila => extracci\363n A3, A2 y A1. Entradas S101, S102 y S103 en) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 357 Tm (una cola => extracci\363n S101, S102 y S103. El orden de salida distingue las estructuras.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 325 Tm (Justificaci\363n de eficiencia) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 302 Tm (Con nodos enlazados y punteros correctos, apilar, desapilar, encolar y desencolar cuestan) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 286 Tm (O\(1\) tiempo. Revisar todos los elementos cuesta O\(n\); las operaciones sobre estructuras) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 270 Tm (vac\355as producen error controlado.) Tj ET
+0.08 0.30 0.49 rg 0 779 595 63 re f
+1 1 1 rg BT /F2 15 Tf 1 0 0 1 60 804 Tm (PA3  |  PILAS LIFO Y COLAS FIFO) Tj ET
+1 1 1 rg BT /F1 8.3 Tf 1 0 0 1 60 788 Tm (Algoritmos y Estructuras de Datos Basados en Inteligencia Artificial \(30710\)) Tj ET
+0.07 0.21 0.34 rg BT /F2 16 Tf 1 0 0 1 62 759 Tm (Actividad 3 - Elecci\363n de estructura) Tj ET
+0.22 0.40 0.60 RG 1.3 w 62 750 m 533 750 l S
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 724 Tm (Decisiones justificadas en cuatro situaciones reales) Tj ET
+0.4 0.47 0.55 rg BT /F1 8 Tf 1 0 0 1 63 38 Tm (ISIL  |  NRC 4134  |  04/11/2026                                       4) Tj ET
+endstream
+endobj
+11 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 12 0 R /Resources << /Font << /F1 15 0 R /F2 16 0 R /F3 17 0 R >> >> >>
+endobj
+12 0 obj
+<< /Length 3864 >>
+stream
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 736 Tm (Tabla acad\351mica comparativa) Tj ET
+0.10 0.36 0.56 rg 57 682 482 32 re f
+1 1 1 rg BT /F2 11 Tf 1 0 0 1 66 693 Tm (CRITERIO) Tj ET
+1 1 1 rg BT /F2 11 Tf 1 0 0 1 205 693 Tm (PILA) Tj ET
+1 1 1 rg BT /F2 11 Tf 1 0 0 1 375 693 Tm (COLA) Tj ET
+0.93 0.96 0.98 rg 57 631 482 46 re f
+0.10 0.17 0.26 rg BT /F2 9.3 Tf 1 0 0 1 65 654 Tm (Principio) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 202 654 Tm (LIFO: \372ltimo en entrar,) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 202 641 Tm (primero en salir) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 375 654 Tm (FIFO: primero en entrar,) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 375 641 Tm (primero en salir) Tj ET
+0.10 0.17 0.26 rg BT /F2 9.3 Tf 1 0 0 1 65 605 Tm (Acceso) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 202 605 Tm (Un \372nico tope) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 375 605 Tm (Frente para retirar y final) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 375 592 Tm (para agregar) Tj ET
+0.93 0.96 0.98 rg 57 533 482 46 re f
+0.10 0.17 0.26 rg BT /F2 9.3 Tf 1 0 0 1 65 556 Tm (Insertar) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 202 556 Tm (Apilar en tope) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 375 556 Tm (Encolar en final) Tj ET
+0.10 0.17 0.26 rg BT /F2 9.3 Tf 1 0 0 1 65 507 Tm (Retirar) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 202 507 Tm (Desapilar del tope) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 375 507 Tm (Desencolar del frente) Tj ET
+0.93 0.96 0.98 rg 57 435 482 46 re f
+0.10 0.17 0.26 rg BT /F2 9.3 Tf 1 0 0 1 65 458 Tm (Consultar) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 202 458 Tm (Ver tope sin extracci\363n) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 375 458 Tm (Ver frente sin extracci\363n) Tj ET
+0.10 0.17 0.26 rg BT /F2 9.3 Tf 1 0 0 1 65 409 Tm (Ventaja) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 202 409 Tm (Deshacer y retroceder cambios) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 375 409 Tm (Turnos y atenci\363n) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 375 396 Tm (secuencial) Tj ET
+0.93 0.96 0.98 rg 57 337 482 46 re f
+0.10 0.17 0.26 rg BT /F2 9.3 Tf 1 0 0 1 65 360 Tm (Complejidad) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 202 360 Tm (O\(1\) por extremo) Tj ET
+0.10 0.17 0.26 rg BT /F1 8.5 Tf 1 0 0 1 375 360 Tm (O\(1\) por extremo) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 274 Tm (Conclusi\363n grupal argumentada) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 251 Tm (Las dos estructuras almacenan datos de manera secuencial, pero obedecen reglas de salida) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 235 Tm (distintas. Para deshacer cambios se requiere invertir el historial: pila LIFO. Para) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 219 Tm (mantener justicia y previsibilidad en los turnos se requiere respetar llegada: cola FIFO.) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 203 Tm (Elegir de acuerdo con la necesidad funcional previene errores en el orden de procesamiento) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 187 Tm (y reduce ajustes innecesarios. Las implementaciones enlazadas facilitan operaciones O\(1\) en) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 171 Tm (sus extremos.) Tj ET
+0.08 0.30 0.49 rg 0 779 595 63 re f
+1 1 1 rg BT /F2 15 Tf 1 0 0 1 60 804 Tm (PA3  |  PILAS LIFO Y COLAS FIFO) Tj ET
+1 1 1 rg BT /F1 8.3 Tf 1 0 0 1 60 788 Tm (Algoritmos y Estructuras de Datos Basados en Inteligencia Artificial \(30710\)) Tj ET
+0.07 0.21 0.34 rg BT /F2 16 Tf 1 0 0 1 62 759 Tm (Actividad 4 - Comparaci\363n y conclusi\363n) Tj ET
+0.22 0.40 0.60 RG 1.3 w 62 750 m 533 750 l S
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 724 Tm (Selecci\363n t\351cnica y ventajas de pilas y colas) Tj ET
+0.4 0.47 0.55 rg BT /F1 8 Tf 1 0 0 1 63 38 Tm (ISIL  |  NRC 4134  |  04/11/2026                                       5) Tj ET
+endstream
+endobj
+13 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 14 0 R /Resources << /Font << /F1 15 0 R /F2 16 0 R /F3 17 0 R >> >> >>
+endobj
+14 0 obj
+<< /Length 3596 >>
+stream
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 736 Tm (Arquitectura del programa) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 713 Tm (app/estructuras.py define Pila y Cola gen\351ricas con nodos enlazados.) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 697 Tm (app/servicio_academico.py combina ambas en el caso: historial de modificaciones y) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 681 Tm (solicitudes pendientes. app/demo.py demuestra la secuencia de inserciones y extracciones.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 653 Tm (Pruebas reproducibles \(unittest\)) Tj ET
+0.93 0.96 0.98 rg 57 594 482 43 re f
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 612 Tm (python -m app.demo) Tj ET
+0.10 0.17 0.26 rg BT /F3 9.5 Tf 1 0 0 1 69 598 Tm (python -m unittest discover -s tests -v) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 568 Tm (Se ejecutaron 22 pruebas locales: 6 para pila, 7 para cola y 9 para servicios acad\351micos.) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 552 Tm (Todas terminaron OK. Entre los casos: orden LIFO/FIFO, consultas sin extracci\363n, vaciado,) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 536 Tm (errores en estructura vac\355a, restauraci\363n de datos, c\363digos duplicados y cambios) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 520 Tm (idempotentes.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 494 Tm (Recomendaciones para mostrar en la exposici\363n) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 471 Tm (Primero explicar el caso y la pila, despu\351s la cola; continuar con las decisiones y) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 455 Tm (comparaci\363n. Al final ejecutar la demo y los tests desde la ra\355z del directorio. Usar) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 439 Tm (diagramas SVG del repositorio para ilustrar los flujos.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 413 Tm (Checklist de entrega) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 390 Tm (1. Publicar este informe PDF y el c\363digo en GitHub.) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 374 Tm (2. Mantener README con objetivo, integrantes, estructura e instrucciones.) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 358 Tm (3. Grabar exposici\363n grupal con las cuatro c\341maras encendidas.) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 342 Tm (4. Publicar video \(no listado\) y pegar la URL aut\351ntica en README.) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 326 Tm (5. La asistencia entre semana ser\341 verificada por el docente.) Tj ET
+0.05 0.34 0.56 rg BT /F2 13 Tf 1 0 0 1 62 300 Tm (Fuente) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 277 Tm (Enunciado institucional: PA3 - Evaluaci\363n aplicada sobre pilas y colas, c\363digo 30710,) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 261 Tm (sesiones 8 a 10, y r\372brica del docente. Diagramas, algoritmos y c\363digo: desarrollo) Tj ET
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 245 Tm (propuesto por el equipo.) Tj ET
+0.08 0.30 0.49 rg 0 779 595 63 re f
+1 1 1 rg BT /F2 15 Tf 1 0 0 1 60 804 Tm (PA3  |  PILAS LIFO Y COLAS FIFO) Tj ET
+1 1 1 rg BT /F1 8.3 Tf 1 0 0 1 60 788 Tm (Algoritmos y Estructuras de Datos Basados en Inteligencia Artificial \(30710\)) Tj ET
+0.07 0.21 0.34 rg BT /F2 16 Tf 1 0 0 1 62 759 Tm (Implementaci\363n, pruebas y publicaci\363n) Tj ET
+0.22 0.40 0.60 RG 1.3 w 62 750 m 533 750 l S
+0.10 0.17 0.26 rg BT /F1 10 Tf 1 0 0 1 62 724 Tm (Sustento t\351cnico de la soluci\363n desarrollada) Tj ET
+0.4 0.47 0.55 rg BT /F1 8 Tf 1 0 0 1 63 38 Tm (ISIL  |  NRC 4134  |  04/11/2026                                       6) Tj ET
+endstream
+endobj
+15 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+16 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold /Encoding /WinAnsiEncoding >>
+endobj
+17 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier /Encoding /WinAnsiEncoding >>
+endobj
+xref
+0 18
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000147 00000 n 
+0000000296 00000 n 
+0000003603 00000 n 
+0000003752 00000 n 
+0000006521 00000 n 
+0000006670 00000 n 
+0000009762 00000 n 
+0000009912 00000 n 
+0000012573 00000 n 
+0000012724 00000 n 
+0000016640 00000 n 
+0000016791 00000 n 
+0000020439 00000 n 
+0000020537 00000 n 
+0000020640 00000 n 
+trailer
+<< /Size 18 /Root 1 0 R >>
+startxref
+20736
+%%EOF
