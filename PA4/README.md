@@ -6,14 +6,14 @@ El módulo ordena el directorio de un campus, busca un servicio por nombre y com
 
 ## Integrantes y organización
 
-| Equipo del curso | Responsabilidad propuesta | Producto para sustentar |
+| Equipo del curso | Responsabilidad | Producto del equipo |
 |---|---|---|
 | Leonardo Cuadros | Directorio y recursividad | Traza de búsqueda, casos base y consulta ausente |
 | Jhonatan Lino | Ordenamiento | Divisiones, mezclas y prueba de orden |
 | Anthony Fernando | Grafo, DFS y BFS | Conexiones, orden de visita y ruta de menos tramos |
 | Victor Sinche | A* e integración | Heurística, comparación de costos y verificación final |
 
-La [matriz de participación](docs/Matriz_participacion.xlsx) vincula los aportes reales con fecha, evidencia y revisión de otro integrante. La nota calculada es una coevaluación interna sobre 20. La asistencia la verifica el docente.
+El grupo declaró participación equitativa. La [matriz de participación](docs/Matriz_participacion.xlsx) registra **20/20 de participación interna para cada integrante**. La calificación oficial y la asistencia corresponden al docente.
 
 ## Archivos
 
