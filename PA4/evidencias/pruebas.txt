@@ -1,0 +1,12 @@
+test_consistencia (test_campus.CampusTest.test_consistencia) ... ok
+test_consulta (test_campus.CampusTest.test_consulta) ... ok
+test_optimos_todos_los_pares (test_campus.CampusTest.test_optimos_todos_los_pares) ... ok
+test_orden (test_campus.CampusTest.test_orden) ... ok
+test_recorrido (test_campus.CampusTest.test_recorrido) ... ok
+test_rutas (test_campus.CampusTest.test_rutas) ... ok
+test_sin_paso (test_campus.CampusTest.test_sin_paso) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.014s
+
+OK

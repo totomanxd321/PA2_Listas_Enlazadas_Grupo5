@@ -1,0 +1,6 @@
+Directorio: Administración, Biblioteca, Cafetería, Entrada, Laboratorio, Patio
+Consulta laboratorio => L
+Consulta Auditorio => Sin coincidencia
+DFS desde Entrada: E -> A -> L -> C -> B -> P
+BFS E -> A -> L | 2 tramos | 14 min
+A* E -> B -> C -> L | 3 tramos | 4 min

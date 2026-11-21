@@ -4,6 +4,10 @@
 
 Equipo (cuatro integrantes): **Leonardo Cuadros, Jhonatan Lino, Anthony Fernando y Victor Sinche**.
 
+## PA4 — Recursividad y grafos
+
+[Proyecto PA4, informe y matriz de participación](PA4/README.md)
+
 ## PA3 — Pilas LIFO y colas FIFO
 
 La evaluación aplicada sobre **deshacer modificaciones mediante pila** y **atender solicitudes mediante cola** está en una carpeta independiente. Los archivos anteriores del repositorio se han preservado.
