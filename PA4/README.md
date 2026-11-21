@@ -4,7 +4,7 @@
 
 El módulo ordena el directorio de un campus, busca un servicio por nombre y compara rutas entre ubicaciones. El campus es didáctico. Para ir de Entrada a Laboratorio, BFS elige dos tramos (14 minutos) y A* elige tres (4 minutos). DFS permite inspeccionar las seis ubicaciones alcanzables.
 
-## Integrantes y organización
+## Grupo G3 · Integrantes y organización
 
 | Equipo del curso | Responsabilidad | Producto del equipo |
 |---|---|---|
